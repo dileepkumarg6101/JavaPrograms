@@ -12,7 +12,7 @@ public class PrimeNumbersFrom1To15 {
                 }
             }
             if (count == 2) {
-                System.out.println(i + " Number is prime number");
+                System.out.print(i + ",");
             }
         }
     }
