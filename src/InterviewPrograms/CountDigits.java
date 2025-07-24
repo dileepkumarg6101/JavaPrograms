@@ -7,14 +7,15 @@ public class CountDigits {
         System.out.println(s1);
 
 
-        int count  = 0;
+        int count = 0;
 
-        while (input != 0){
-            int ld  =input%10;
+        while (input != 0) {
+
             count++;
-            input/=10;
+            input /= 10;
         }
         System.out.println(count);
+
 // convert given number to string solutions to count digits in an integer........
         String s = Integer.toString(count);
         System.out.println(s);
