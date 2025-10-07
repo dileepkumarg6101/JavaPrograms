@@ -30,8 +30,8 @@ public class FirstAndLastElement {
 
          */
 
-    // Input Array
-        Integer[] array1 = {4,2,1,6};
+        // Input Array
+        Integer[] array1 = {4, 2, 1, 6};
         // Convert array to ArrayList
         List<Integer> list = Arrays.asList(array1);
         // First element using Stream
@@ -40,14 +40,13 @@ public class FirstAndLastElement {
 
         // Last element using Stream
         Optional<Integer> last = list.stream()
-                .skip(list.size()-1)
+                .skip(list.size() - 1)
                 .findFirst();
 
-        if (first.isPresent() && last.isPresent()){
+        if (first.isPresent() && last.isPresent()) {
             System.out.println("First element using Stream: " + first.get());
             System.out.println("Last element using Stream: " + last.get());
-        }
-        else{
+        } else {
             System.out.println("The list is empty!");
 
         }
