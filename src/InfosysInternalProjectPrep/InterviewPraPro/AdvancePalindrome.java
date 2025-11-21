@@ -1,4 +1,4 @@
-package InfosysInternalProjectPrep;
+package InfosysInternalProjectPrep.InterviewPraPro;
 
 public class AdvancePalindrome {
     public static void main(String[] args) {

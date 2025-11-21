@@ -53,6 +53,7 @@ public class FindCommonElements {
                 .filter(list4:: contains)
                 .distinct()
                 .collect(Collectors.toList());
+
         System.out.println("Common Elements using Java Stream: " + commonElements);
     }
 

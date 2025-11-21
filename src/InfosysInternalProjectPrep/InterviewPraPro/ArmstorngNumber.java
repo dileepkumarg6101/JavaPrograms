@@ -1,4 +1,4 @@
-package InfosysInternalProjectPrep;
+package InfosysInternalProjectPrep.InterviewPraPro;
 
 import java.util.Scanner;
 
