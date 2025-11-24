@@ -13,11 +13,14 @@ Write a Java program to count the occurrences of each word in a list using the
  */
 public class WordCountUsingGroupingBy {
     public static void main(String[] args) {
-        List<String> names  = Arrays.asList("Apple", "Apple", "Bonda","Bajji");
 
-        Map<String, Long> result =  names.stream()
-                .collect(Collectors.groupingBy(w -> w, Collectors.counting()));
+        List<String> names  = Arrays.asList("apple","apple","banana","cucucu");
+
+        Map<String, Long> result = names.stream()
+                .collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+
         System.out.println(result);
+
 
     }
 }
