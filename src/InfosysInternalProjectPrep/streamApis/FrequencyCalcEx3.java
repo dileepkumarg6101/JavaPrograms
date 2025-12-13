@@ -1,18 +1,20 @@
 package InfosysInternalProjectPrep.streamApis;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class CharacterFrequencyExample {
+public class FrequencyCalcEx3 {
     public static void main(String[] args) {
 
-        String s = "dileep";
+        List<String> sentence = Arrays.asList("Java", "is", "fun", "and", "Java", "is", "powerful");
 
 //        List<String> names = Arrays.asList("Dileep");
 
-        Map<Character, Long> result = s.chars()
-                .mapToObj(c -> (char) c)
+        Map<String, Long> result = sentence.stream()
                 .collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()));
 
         System.out.println(result);
